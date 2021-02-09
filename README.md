@@ -1,0 +1,1 @@
+This is my final project for Cognizant training. This is a fully functioning ticketing web application.
