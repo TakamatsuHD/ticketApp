@@ -1,3 +1,7 @@
+.row{
+    max-width: 1140px;
+    margin:0 auto;
+}
 .grid-container-login{
 	display: grid;
 	grid-template-areas: 
