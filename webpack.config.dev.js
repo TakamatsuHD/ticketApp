@@ -17,6 +17,16 @@ module.exports = {
                 { from: "./src/images", to: "images" },
             ],
         }),
+        new CopyPlugin({
+            patterns: [
+                { from: "./src/login.html", to: "." },
+            ],
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: "./src/register.html", to: "." },
+            ],
+        }),
     ],
     module: {
         rules: [
