@@ -1,0 +1,57 @@
+/* body {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 40000% 40000%;
+	animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.centerText {
+    text-align: center;
+}
+
+.login-container{
+    text-align: center;
+}
+
+.logo{
+	text-align: center;
+}
+
+.container{
+	min-height: 10em;
+    vertical-align: middle
+}
+
+hr {
+    width: 90%;
+    border: 0;
+    height: 1px;
+    background: #000;
+    opacity: 0.0;
+}
+
+#username{
+  	margin: 4px auto;
+}
+#password{
+  	margin: 4px auto;
+}
+
+#signin{
+	margin: 4px auto;
+}
+
+#signup{
+	margin: 4px auto;
+} */
