@@ -25,7 +25,7 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                { from: "./src/register.html", to: "register" },
+                { from: "./src/register.html", to: "." },
             ],
         }),
     ],
