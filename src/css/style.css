@@ -1,158 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+	box-sizing: border-box;
+	font-family:'Open Sans',"Arial",sans-serif;
+}
+
+html, body{
+    background-color: cornflowerblue;
+	color:#555;
+    font-size :20px;
+    text-rendering: optimizeLegibility;
+}
+
+.clearfix {zoom: 1;}
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+header{
+	background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(../images/84248.png);
+	background-position:center;
+    background-attachment: fixed;
+	background-size: cover;
+	height: 100vh;
+}
+
 .row{
     max-width: 1140px;
     margin:0 auto;
 }
-.grid-container-login{
-	display: grid;
-	grid-template-areas: 
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-    '. header header .'
-	'. subHead subHead .'
-	'. inputId inputId .'
-	'. inputPsw inputPsw .'
-	'. signIn signIn.'
-	'. signUp signUp .';
-    grid-gap: 10px;
-    background-color: #2196F3;
-	padding: 10px;
+
+section{
+    padding:80px 0;
+}
+
+.box{
+    padding:1%;
+}
+
+h1{
+	margin:0;
+    color:#fff;
+    font-size: 240%;
+    word-spacing: 4px;
+    letter-spacing:1px;
+	margin-bottom: 20px;
+}
+
+.btn{
+	margin: 1%;
+}
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding:10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 200px;   
+    transition:background-color 0.2s,border 0.2s, color 0.2s;
+}
+
+.btn-full:link,
+.btn-full:visited{
+    border:1px solid rgb(35, 93, 219);
+    background-color:rgb(35, 93, 219);
+    margin-right: 15px;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited{
+	background-color:rgb(72, 123, 233);
+    color:black;
+    
+}
+
+.btn:hover,
+.btn:active{
+    background-color:rgb(72, 123, 233)
+}
+
+
+.btn-full:hover,
+.btn-ful:active{
+    border:1px solid rgb(72, 123, 233);
+}
+
+.btn-ghost:hover,
+.btn-ghost:active{
+	background-color: rgb(81, 178, 235);
+    border:1px solid rgb(35, 93, 219);
+    
+}
+
+.container{
+    position:absolute;
+    left: 50%;
+    top: 50%;
+    width:1140px;
+    transform:translate(-50%,-50%)
+}
+
+.centered {
+	border: 1px solid white;
+	max-width: 100%;
 	text-align: center;
-	font-size: 15px;
-	justify-items: center;
-	align-items: center;
-}
-
-.grid-container-signup{
-	display: grid;
-	grid-template-areas: 
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-	' . . . . '
-    '. header header .'
-	'. subHead subHead .'
-	'. firstName firstName .'
-	'. lastName lastName .'
-	'. inputId inputId .'
-	'. inputPsw inputPsw .'
-	'. inputPswConfirm inputPswConfirm .'
-	'. signUp signUp .';
-    grid-gap: 10px;
-    background-color: #2196F3;
-	padding: 10px;
-	text-align: center;
-	font-size: 15px;
-	justify-items: center;
-	align-items: center;
-}
-
-.grid-container > div {
-	text-align: center;
-	max-width: auto;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	/* bring your own prefixes */
+	transform: translate(-50%, -50%);
   }
 
-  .header{
-	 font-size: 30px;
-      grid-area: header;
+  .input{
+	  margin: 1%;
   }
 
-  .subHead{
-	max-width: 140px;
-	font-size: 10px;
-    grid-area: subHead;
-}
-
-.firstName{
-	max-width: 140px;
-    grid-area: firstName;
-}
-
-.lastName{
-	max-width: 140px;
-    grid-area: lastName;
-}
-
-
-.inputId{
-	max-width: 140px;
-    grid-area: inputId;
-}
-
-.inputPsw{
-	max-width: 140px;
-    grid-area: inputPsw;
-}
-
-.inputPswConfirm{
-	max-width: 140px;
-    grid-area: inputPswConfirm;
-}
-
-.signIn{
-	font-size: 10px;
-	max-width: 100px;
-	grid-area: signIn;
-}
-
-.signUp{
-	font-size: 10px;
-	max-width: 100px;
-	grid-area: signUp;
-}
-
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	width: 200px;
-	background-color: #f1f1f1;
-  }
-  
-  li a {
-	display: block;
-	color: #000;
-	padding: 8px 16px;
-	text-decoration: none;
-  }
-  
-  /* Change the link color on hover */
-  li a:hover {
-	background-color: #555;
-	color: white;
+  .h1{
+	  font-family: open bold;
   }

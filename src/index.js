@@ -1,6 +1,4 @@
-import 'bootstrap/dist/css/bootstrap.css'
 import axios from 'axios';
-import './css/style.css'
 
 
 const signInBtn = document.querySelector('#signIn')
